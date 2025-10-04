@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+  
+  <title>GlobExplore</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0c10;
+      color: #ffffff;
+    }
+
+    header {
+            background: #0f1114;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #c7a64a;
+        }
+        header h1 {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 2rem;
+            color: #c7a64a;
+        }
+        header img {
+            width: 80px;
+            height: 80px;
+        }
+
+    nav a {
+      color: #c7a64a;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: #0f1114;
+      padding: 25px;
+      border: 2px solid #c7a64a;
+      border-radius: 14px;
+    }
+
+    .contact-form h2 {
+      color: #c7a64a;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #c7a64a;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: #1a1c20;
+      color: #ffffff;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background: #c7a64a;
+      color: #0b0c10;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #e3c468;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+      background: #0f1114;
+      padding: 25px;
+      border-radius: 14px;
+      border: 2px solid #c7a64a;
+    }
+
+    .contact-info h2 {
+      color: #c7a64a;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      color: #9aa3ad;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: #c7a64a;
+      margin-right: 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      background: #0f1114;
+      padding: 15px;
+      text-align: center;
+      border-top: 2px solid #c7a64a;
+      color: #9aa3ad;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="logo.png" alt="GlobExplore Logo"> GlobExplore
+    </h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="">--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label for="country">Country</label>
+        <select id="country">
+          <option value="">--Select Country--</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Australia</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message..."></textarea>
+
+        <button type="button">Send Message</button>
+      </form>
+    </div>
+
+   
+    <div class="contact-info">
+      <h2>Contact Details</h2>
+      <p><i class="fas fa-envelope"></i> Email: info@globexplore.com</p>
+      <p><i class="fas fa-phone"></i> Phone: +91 98765 43210</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    GlobExplore
+  </footer>
+</body>
+</html>
